@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=myAppID, affiliate-data=myAffiliateData, app-argument=myURL">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Invertase">
+    <meta name="apple-mobile-web-app-title" content="Invertase">
+
+    <link rel="icon" type="image/png" href="">
+    <link rel="mask-icon" href="" color="#1d4695">
+    <meta name="application-name" content="Invertase">
+
+    <title>Invertase Posts</title>
+    <meta name="description" content="{{subtitle}}" />
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{subtitle}}" />
+    <meta property="og:image" content="{{imageUrl}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image"></meta>
+    <meta name="twitter:title" content="{{title}}"></meta>
+    <meta name="twitter:site" content="invertase.io"></meta>
+    <meta name="twitter:description" content="{{subtitle}}"></meta>
+    <meta name="twitter:image" content="{{imageUrl}}"></meta>
+
+    <link rel="apple-touch-icon" href="">
+</head>
+
+<body>
+    <h1>Invertase Blog</h1>
+</body>
+
+<script>
+    var result = detect.parse(navigator.userAgent);
+    if (result.os.family === 'iOS') {
+        window.location.href = 'https://apps.apple.com/us/app/YOUR_APP_ID';
+    } else if (result.os.family.includes('Android')) {
+        window.location.href = 'https://play.google.com/store/apps/details?id=YOUR_APP_ID';
+    }
+</script>
+
+</html>
