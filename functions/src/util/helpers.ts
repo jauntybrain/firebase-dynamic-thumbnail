@@ -44,13 +44,13 @@ export async function createThumbnail(imageUrl: string, title: string, subtitle:
     ctx.font = `500 30px 'Poppins'`; // fontWeight fontSize fontFamily
     ctx.fillStyle = '#FFFFFFCC'; // color
     // Draw the title at (50, 550) with max width of 1000 and fontSize of 30
-    const subtitleEndY = drawWrappedText(ctx, subtitle, 50, 550, 900, 30);
+    const subtitleEndY = drawWrappedText(ctx, subtitle, 50, 550, 1000, 30);
 
     // Step 6: Define font style for the title and draw it
     ctx.font = `900 60px 'Poppins'`;
     ctx.fillStyle = '#FFFFFF';
     // Draw the title on top of subtitle (with 15px spacing) with max width of 1000 and fontSize of 60
-    drawWrappedText(ctx, title.toUpperCase(), 50, subtitleEndY - 15, 900, 60);
+    drawWrappedText(ctx, title.toUpperCase(), 50, subtitleEndY - 15, 800, 60);
 
     // Step 7: Draw the overlay logo in the top left corner
     const overlayLogo = await loadImage(path.join(__dirname, '../assets/images/invertase.svg'));
