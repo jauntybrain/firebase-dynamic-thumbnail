@@ -1,5 +1,5 @@
 # Creating Dynamic Thumbnails with Firebase
-![Alt text]([public/thumbnail-example.jpeg](https://github.com/jauntybrain/firebase-dynamic-thumbnail/assets/105740958/4b5d2d0f-97af-467a-9e56-ac11d4f56d7c))
+![Alt text](https://github.com/jauntybrain/firebase-dynamic-thumbnail/assets/105740958/4b5d2d0f-97af-467a-9e56-ac11d4f56d7c)
 
 This project aims to demonstrate how to generate and serve dynamic image thumbnails using Firestore, Cloud Storage, Hosting, and Cloud Functions.
 
